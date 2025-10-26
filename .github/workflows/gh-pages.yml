@@ -11,10 +11,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Deploy contents of the folder, not the folder itself
-          publish_dir: ./Kunapriya_PortFolio-main/*
+          publish_dir: ./Kunapriya_PortFolio-main

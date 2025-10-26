@@ -16,4 +16,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./Kunapriya_PortFolio-main
+          # Publish the CONTENTS of the folder, not the folder itself
+          publish_dir: ./Kunapriya_PortFolio-main/
+          # Optional: keep history to avoid recreating branch every time
+          keep_files: true

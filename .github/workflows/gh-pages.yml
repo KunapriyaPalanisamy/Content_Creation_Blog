@@ -1,10 +1,8 @@
 name: GitHub Pages
-
 on:
   push:
     branches:
       - main
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -17,3 +15,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./Kunapriya_PortFolio-main/Blogs
+          force_orphan: true
